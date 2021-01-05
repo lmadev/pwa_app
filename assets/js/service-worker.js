@@ -1,10 +1,10 @@
 let cacheName = "pwa-lmacode-dev"
 let  appShellFiles = [
-    '/pwa.html',
     '/img/icon_16x16.png',
     '/img/icon_144x144.png',
     '/img/icon_512x512.png',
     '/build/app.js',
+    '/build/app1.js',
 ]
 
 self.addEventListener('install', (e) => {
@@ -12,6 +12,7 @@ self.addEventListener('install', (e) => {
     e.waitUntil(
         caches.open(cacheName).then((cache) => {
             console.log('[Service Worker] Caching all: app shell and content');
+            console.log(appShellFiles)
             return cache.addAll(appShellFiles);
         })
     );
