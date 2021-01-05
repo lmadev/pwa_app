@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="theme-color" content="#96b3bc"/>
+        <meta name="adr" content="#4285f4">
+        <link rel="apple-touch-icon" href="{{ asset('/img/icon_16x16.png') }}">
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+        <link rel="manifest" href="{{ asset('/manifest.json') }}">
+        <link rel="icon" type="image/icon" href="{{ asset('/img/favicon.ico') }}">
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}
+            <script src="{{ asset('/build/runtime.js') }}"></script>
+            <script src="{{ asset('/build/app.js') }}"></script>
+            <script src="{{ asset('/build/app1.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>
