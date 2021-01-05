@@ -5,7 +5,6 @@
  * (and its CSS file) in your base layout (base.html.twig).
  */
 
-
 require('bootstrap');
 require('../scss/app.scss');
 import Chart from 'chart.js'
