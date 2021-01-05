@@ -37,6 +37,8 @@ var myChart = new Chart(ctx, {
                     beginAtZero: true
                 }
             }]
-        }
+        },
+        responsive: true,
+        maintainAspectRatio: true
     }
 });

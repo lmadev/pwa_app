@@ -1,7 +1,7 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
-    <table class="table table-dark">
+    <table class="table table-responsive-sm table-sm table-dark">
         <thead>
         <tr>
             <th scope="col">#</th>
@@ -22,5 +22,6 @@
         </tbody>
     </table>
 
-    <canvas id="myChart" width="400" height="400" data-currency="{{ currency|json_encode }}"></canvas>
+    <canvas id="myChart"  data-currency="{{ currency|json_encode }}"></canvas>
+
 {% endblock %}
