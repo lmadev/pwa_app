@@ -33,7 +33,7 @@ class NbpController extends AbstractController
 
 
     /**
-     * @Route("/nbp/index", name="app_nbp_index")
+     * @Route("/", name="app_nbp_index")
      */
     public function index(): Response
     {
