@@ -1,0 +1,7 @@
+{
+  "build/app.css": "/build/app.css",
+  "build/app.js": "/build/app.js",
+  "build/app1.js": "/build/app1.js",
+  "build/runtime.js": "/build/runtime.js",
+  "build/../sw.js": "/build/../sw.js"
+}
