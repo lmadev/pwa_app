@@ -9,7 +9,7 @@
 require('bootstrap');
 require('../scss/app.scss');
 import Chart from 'chart.js'
-console.log(navigator);
+
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
         navigator.serviceWorker.register("/sw.js", { scope: "/" }).then(() => {

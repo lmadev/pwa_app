@@ -9,7 +9,6 @@ function randomColors(){
     var r = () => Math.random() * 256 >> 0;
     return `rgba(${r()}, ${r()}, ${r()},0.5)`;
 }
-console.log('lma')
 
 data.forEach(function (item) {
     labels.push(item.code)
